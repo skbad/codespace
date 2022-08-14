@@ -61,4 +61,14 @@ else:
 num = 0
 while num < 10:
     num = num + 1
-print("Num = ", num)    
+print("Num = ", num)
+
+def thing():
+    print("Hello")
+    print("fun")
+thing()
+print("Zip")
+
+i = 3
+print(i)
+type(i)
