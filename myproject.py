@@ -72,3 +72,24 @@ print("Zip")
 i = 3
 print(i)
 type(i)
+
+Childrens = ["Abdullah", "Maryam", "Fatima", "Amina", "Aisha", "Sadeeq", "Sabriya", "Fakriya"]
+for child in Childrens:
+    print("Happy Islamic New Year: ", child)
+    print("Done")
+
+it = 0
+print("Before", it)
+for item in [3,7,4,9,40,80,97]:
+    it = it + 1
+    print(it, item)
+print("After", it)
+
+count = 0
+sum = 0
+print("Before ", count, sum)
+for value in [2, 4, 6, 7, 9, 5, 30]:
+    count = count + 1
+    sum = sum + value
+    print(count, sum, value)
+print("After ", count, sum, sum/count )
