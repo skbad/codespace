@@ -162,3 +162,47 @@ for word, count in list(counts.items()):
         bigword = word
         bigcount = count
 print(bigword, bigcount)
+
+me = "Sikiru Badamasi"
+sme = me.split()
+print(sme)
+
+x = 3
+x = x + 1
+print(x)
+
+4
+y = 4
+y + 1
+
+pupil = input('Enter Your Name: ')
+print('Hello', pupil, 'Welcome')
+
+h = input('Enter Hours Work: ')
+r = input('Enter rate: ')
+hour = float(h)
+rate = float(r)
+pay = hour * rate
+print('Pay: ', pay)
+
+temper = input('Enter Celsius: ')
+temp = float(temper)
+fahr = 32 + (temp * 1.8)
+print('Temrature in Fahrent = ', fahr)
+
+#If the remainder when x is divided by 2 is 0,
+x = 9
+if x%2 == 0:
+    print('It is an Even Number')
+else:
+    print('It is an Odd number')
+
+#elif statement
+
+choice = input('Enter Your choices: ')
+if choice == 'a':
+    print('Bad guess')
+elif choice == 'b':
+    print('Good guess')
+elif choice == 'c':
+    print('Close, but not correct')
