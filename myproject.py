@@ -178,6 +178,8 @@ y + 1
 pupil = input('Enter Your Name: ')
 print('Hello', pupil, 'Welcome')
 
+#convert celsius to Fahrent
+
 h = input('Enter Hours Work: ')
 r = input('Enter rate: ')
 hour = float(h)
@@ -206,3 +208,90 @@ elif choice == 'b':
     print('Good guess')
 elif choice == 'c':
     print('Close, but not correct')
+
+#pay rate greater than 40 program
+
+hour = input("Enter Hours: ")
+rate = input("Enter Rate: ")
+try:
+   hp = float(hour)
+   rp = float(rate)
+except:
+    print("Erro, Please enter numeric input")
+print(hp, rp)
+if hp > 40:
+    xp = rp * hp
+    dp = (hp - 40.0) * (rp * 0.5)
+    xtp = xp + dp
+else:
+    xtp = hp * rp
+print("Pay: ", xtp)
+
+in_scores = input('Enter Scores: ')
+score = int(in_scores)
+for score in range(0.0,1.0):
+    print()
+
+
+#pay with try and except methods-1
+
+hour = input('Enter Hour: ')
+rate = input('Enter Rate: ')
+try:
+    xh = int(hour)
+    xr = int(rate)
+except:
+    print('Erro, Please Enter Numric input')
+
+    #pay with try and except methods-2
+
+    hour = input('Enter Hour: ')
+    try:
+        xh = int(hour)
+    except:
+        print('Erro, Please Enter Numeric input')
+
+
+
+#scores and grade program
+
+score_in = input('Enter Scores: ')
+scores = float(score_in)
+if scores >= 0.9:
+    print('Grade = A')
+elif scores >= 0.8:
+    print('Grade = B')
+elif scores >= 0.7:
+    print('Grade = C')
+elif scores >= 0.6:
+    print('Grade = D')
+elif scores < 0.6:
+    print('Grade = F')
+else:
+    print('Done')
+
+
+#import random
+
+import random
+for i in range(1):
+    x = random.random()
+    print(x)
+
+
+
+#def statement
+
+
+def print_twice(Bruce):
+    print(Bruce)
+    print(Bruce)
+print_twice('Spam')
+import math
+print_twice(math.pi)
+print_twice('Alhamdulillah')
+print_twice(20)
+print_twice('ok' * 5)
+
+name = 'Amina Bello'
+print_twice(name )
