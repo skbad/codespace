@@ -1,18 +1,15 @@
-hour = input("Enter Hours: ")
-rate = input("Enter Rate: ")
-hp = int(hour)
-try:
-    rate
-except:
-    print("Erro, Please enter numeric input")
-print(hp, rate)
-if hp > 40:
-    xp = rate * hp
-    dp = (hp - 40.0) * (rate * 0.5)
-    xtp = xp + dp
-else:
-    xtp = hp * rate
-print("Pay: ", xtp)
+def computepay(hour,rate):
+    if hour <= 40:
+        pay = hour * rate
+    elif hour > 40:
+        x = (hour - 40) * (rate * 1.5)
+        y = hour * rate
+        pay = x + y
+    return pay
 
-import math
-print(math)
+hrs = input('Enter Hour:')
+rte = input('Enter Rate:')
+hour = float(hrs)
+rate = float(rte)
+p = computepay(hour, rate)
+print('Pay:', p)
