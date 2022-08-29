@@ -3,16 +3,34 @@
 #and average of the numbers. If the user enters anything other than a
 #number, detect their mistake using try and except and print an error
 #message and skip to the next number.
-try:
-    inp_i = input('Enter Number: ')
-    inp = int(inp_i)
-except:
-    print('Error')
+num = 0
+tot = 0.0
+while True:
+    sval = input('Enter Number: ')
+    if sval == 'done':
+        break
+    try:
+        fval = float(sval)
+    except:
+        print('Invalid Input')
+        continue
+        num = num + 1
+        tot = tot + fval
+print(tot, num, tot/num)
+
+fruit = 'Banana'
+letter = fruit[-2]
+print(letter)
+len(fruit)
+index = 0
+while index < len(fruit):
+    letter = fruit[index]
+    print(letter)
+    index = index + 1
+
+word = 'banana'
 count = 0
-total = 0
-for i in inp:
-    count = count + 1
-    total = total + i
-    print(count, total, i)
-    average = total/count
-print('After',count, total, average)
+for letter in word:
+    if letter == 'a':
+        count = count + 1
+print(count)
