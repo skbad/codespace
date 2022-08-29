@@ -295,3 +295,52 @@ print_twice('ok' * 5)
 
 name = 'Amina Bello'
 print_twice(name )
+
+
+
+# Rewrite your pay computation with time-and-a-half for over-
+#time & create a function called computepay which takes two parameters
+#(hours & rate).
+
+
+def computepay(hour,rate):
+    if hour <= 40:
+        pay = hour * rate
+    elif hour > 40:
+        xh = (hour - 40) * (rate * 1.5)
+        xr = hour * rate
+        pay = xh + xr
+    return pay
+
+x_inp = input('Enter Hour: ')
+hour = float(x_inp)
+y_inp = input('Enter Rate: ')
+rate = float(y_inp)
+payment = computepay(hour,rate)
+print('Pay:', payment)
+
+
+
+# Rewrite the grade program from the previous chapter using
+# a function called computegrade that takes a score as its parameter and
+# returns a grade as a string.
+
+
+def computegrade(score):
+    if score >= 0.9:
+        return 'A'
+    elif score >= 0.8:
+        return 'B'
+    elif score >= 0.7:
+        return 'C'
+    elif score >= 0.6:
+        return 'D'
+    elif score < 0.6:
+        return 'F'
+    else:
+        return 'Error'
+
+x_inp = input('Enter Scores: ')
+score = float(x_inp)
+scoring = computegrade(score)
+print('Result = ', scoring)
