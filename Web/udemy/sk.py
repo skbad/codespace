@@ -80,3 +80,6 @@ print(grant_access)
 
 is_magician = False
 is_expert = True
+
+for i in 'Items':
+    print(i)
